@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilos/reset.css">
+        <link rel="stylesheet" href="estilos/contatos.css">
+        <!-- Design responsivo: como ajustar o estilo da nossa página de acordo com o tamanho da tela do dispositivo que a acesse -->
+        <meta name="viewport" content="width=device-width">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+            <h1><img src="imagens/logo-branco.png" alt="Logo marca no cabeçalho"></h1>
+            <!-- menu -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Serviços</a></li>
+                        <li><a href="contatos.html">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <fieldset class="informacoes-basicas">
+                <label for="nome-completo">Nome completo</label>
+                <input type="text" id="nome-completo" placeholder="Digite seu nome completo" class="input-padrao" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" class="input-padrao" required>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="+55 (XX) X XXXX-XXXX" class="input-padrao" required>
+                <label for="mensagem">Mensagem</label>
+                <textarea rows="10"></textarea>
+                </fieldset>
+                <fieldset>
+                <div class="forma-de-contato">
+                    <legend>Como prefere a forma de contato?</legend>
+                    <label for="email-contato"><input type="radio" name="forma-de-contato" id="email-contato"> E-mail</label>
+                    
+                    <label for="whatsapp-contato"><input type="radio" name="forma-de-contato" id="whatsapp-contato"> WhatsApp</label>
+                    
+                    <label for="telefone-contato"><input type="radio" name="forma-de-contato" id="telefone-contato"> Telefone</label>
+                </div>
+                
+                <div>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </div>
+                <label class="checkbox"><input type="checkbox"> Gostaria de receber novidades através do E-mail?</label>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+            <h1 id="horarios">Horário de funcionamento</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário (Manhã)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>8h às 10h</td>
+                    </tr>
+                    <tr>
+                        <td>Terça-feira</td>
+                        <td>8h às 10h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td>8h às 10h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <img src="imagens/logo-branco.png" alt="Logo marca no rodapé">
+            <p>&copy; Copyright </p>
+        </footer>
+    </body>
+</html>
