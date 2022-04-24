@@ -1,0 +1,173 @@
+body{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-image: url("../imagens/bg.jpg");
+    /* Espaçamento interno cima e baixo */
+    padding: 20px 0;
+}
+.logo{
+    width: 250px;
+}
+.caixa{
+    position: relative;
+    width: 80%;
+    /* alinhar uma div ao centro */
+    margin: 0 auto;
+    
+}
+nav{
+    /* posicionar elemento em qualquer lugar da página */
+    position: absolute;
+    top:110px;
+    right:0;
+}
+nav li{
+    display: inline-block;
+    margin: 20px;
+}
+nav a{
+    /* Transforma todo texto em maiúsculo */
+    text-transform:uppercase;
+    /* Elimina o texto sublinhado */
+    text-decoration:none;
+    /* Deixar texto em negrito */
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+nav a:hover{
+    color: red;
+    text-decoration: underline;
+}
+/*   CONTEÚDO   */
+main{
+    width: 90%;
+    margin:0 auto;
+}
+/*   CONTEÚDO >> FORMULÁRIO   */
+
+form{
+    margin: 50px 0;
+}
+form legend{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+form label{
+    display: block;
+    margin: 0 0 20px;
+    font-size: 20px;
+    
+}
+.informacoes-basicas{
+    font-weight: bold;
+}
+form textarea{
+    width: 62%;
+}
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px;
+    width: 60%;
+}
+.forma-de-contato{
+    margin:30px 0;
+}
+form button{
+    position: relative;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: black;
+    border: 2px solid #1d2434;
+    border-radius: 0;
+    background: none;
+    transition: .5s;
+    cursor: pointer;
+    
+}
+form button:hover{
+    background-color: black;
+    color: white;
+    /* um zoom = expandir componente */
+    transform: scale(1.05);
+}
+.checkbox{
+    margin-top: 20px;
+}
+#horarios{
+    display: block;
+    margin: 0 0 20px;
+    font-size: 25px;
+}
+table{
+    margin: 20px 0 40px;
+}
+thead{
+    background-color:black;
+    color:white;
+    font-weight:bold;
+}
+th, td{ 
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+
+/*   RODAPÉ   */
+footer{
+    text-align:center;
+    background-image:url('../imagens/bg.jpg');
+    padding: 50px 0;
+}
+footer p{
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+footer p a{
+    color:blue;
+    text-decoration: none;
+}
+footer p a:hover{
+    color:red;
+}
+@media screen and (max-width: 980px){
+    .caixa, .produtos,.principal, .beneficios, .localizacao, .video{
+        width:auto;
+    }
+    h1 {
+        text-align: center;
+       
+    }
+    .produtos li{
+        width: 85%;
+    }
+    .input-padrao, form textarea, form button, table{
+        width: 90%;
+    }
+    p{
+        text-align: justify;
+        padding: 20px;
+    }
+    nav{
+        position:static;
+        text-align: center;
+    }
+    nav ul li{
+        margin: 3px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+    footer > p{
+        line-height: 30px;
+    }
+}

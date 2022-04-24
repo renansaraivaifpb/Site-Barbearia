@@ -1,0 +1,144 @@
+body{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-image: url("../imagens/bg.jpg");
+    /* Espaçamento interno cima e baixo */
+    padding: 20px 0;
+}
+.logo{
+    width: 250px;
+}
+.caixa{
+    position: relative;
+    width: 80%;
+    /* alinhar uma div ao centro */
+    margin: 0 auto;
+    
+}
+nav{
+    /* posicionar elemento em qualquer lugar da página */
+    position: absolute;
+    top:110px;
+    right:0;
+}
+nav li{
+    display: inline-block;
+    margin: 20px;
+}
+nav a{
+    /* Transforma todo texto em maiúsculo */
+    text-transform:uppercase;
+    /* Elimina o texto sublinhado */
+    text-decoration:none;
+    /* Deixar texto em negrito */
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+nav a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.produtos{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    
+}
+.produtos h2{
+    font-size: 36px;
+    font-weight: bold;
+    
+}
+.produtos li{
+    background-color: black;
+    /* tamanho do seu conteúdo, mas regulável. */
+    display: inline-block;
+    width: 30%;
+    text-align:center;
+    vertical-align: top;
+    margin: 0 1%;
+    box-sizing:border-box;
+    /* borda fica posicionada entre o padding e a margin. */
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+}
+.produtos li:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.095);
+}
+.produtos li:hover h2{
+    color: green;
+}
+
+.produtos li:active{
+    border-color: greenyellow;
+}
+.produtos li h2{
+    margin-bottom: 10px;
+}
+.produtos li img{
+    width: 100%;
+}
+.produtos-descricao{
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 20px 20px;
+}
+.produtos-preco{
+    font-size: 18px;
+    margin-top:10px;
+    padding: 20px 20px;
+}
+footer{
+    text-align:center;
+    background-image:url('../imagens/bg.jpg');
+    padding: 50px 0;
+}
+footer p{
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+footer p a{
+    color:blue;
+    text-decoration: none;
+}
+footer p a:hover{
+    color:red;
+}
+@media screen and (max-width: 980px){
+    .caixa, .produtos,.principal, .beneficios, .localizacao, .video{
+        width:auto;
+    }
+    h1 {
+        text-align: center;
+       
+    }
+    .produtos li{
+        width: 85%;
+        margin-top: 25px;
+    }
+    p{
+        text-align: justify;
+        padding: 20px;
+    }
+    nav{
+        position:static;
+        text-align:center;
+    }
+    nav ul li{
+        margin: 3px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+    footer > p{
+        line-height: 30px;
+    }
+}
