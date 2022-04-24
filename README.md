@@ -18,7 +18,7 @@ Meus agradecimentos aos professores Pedro Marins pela didática incrível e ao W
 Alura Latam
 #ONE #OracleNextEducation #Alura #CSS #transiçãodecarreira #frontend #HTML
 
-site: https://www.barbearia-aurora.netlify.app
+site: https://barbearia-aurora.netlify.app/
 
 
 ## Visualização
